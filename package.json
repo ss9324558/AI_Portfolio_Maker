@@ -1,0 +1,54 @@
+{
+  "name": "ai_portfolio_maker",
+  "version": "1.0.0",
+  "description": "**Beautiful, responsive portfolio websites—auto-generated from your LinkedIn or resume, with stunning 3D and animated themes. Simple, powerful, and ready for everyone.**",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ss9324558/AI_Portfolio_Maker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "GPL-3.0-only",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ss9324558/AI_Portfolio_Maker/issues"
+  },
+  "homepage": "https://github.com/ss9324558/AI_Portfolio_Maker#readme",
+  "scripts": {
+    "dev": "concurrently \"cd frontend && npm run dev\" \"cd backend && npm run dev\"",
+    "build": "concurrently \"cd frontend && npm run build\"",
+    "start": "concurrently \"cd frontend && npm run dev\" \"cd backend && npm run dev\"",
+    "install-server": "cd backend && npm install",
+    "start-server": "cd backend && node src/index.js",
+    "install-client": "cd frontend && npm install",
+    "build-client": "cd frontend && npm run build",
+    "start-client": "cd frontend && npm run dev",
+    "lint-all": "node lint-all.js",
+    "prepare": "husky",
+    "commit-force": "HUSKY=0 git commit -m",
+    "push-force": "HUSKY=0 git push"
+  },
+  "lint-staged": {
+    "backend/**/*.js": [
+      "npm --prefix backend run lint",
+      "npm --prefix backend run format"
+    ],
+    "frontend/**/*.js": [
+      "npm --prefix frontend run lint",
+      "npm --prefix frontend run format"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "boxen": "^8.0.1",
+    "chalk": "^5.4.1",
+    "concurrently": "^9.1.2",
+    "figlet": "^1.8.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.2",
+    "ora": "^8.2.0"
+  }
+}

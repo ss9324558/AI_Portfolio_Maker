@@ -1,0 +1,2 @@
+# Run the commit lint script
+node commit-lint.js "$1"
