@@ -14,7 +14,7 @@ We actively maintain and provide security updates for the latest major version o
 If you discover a security vulnerability or have a security concern regarding this project:
 
 - **Please DO NOT open a public issue or pull request.**
-- Instead, email us directly at: [your-email@domain.com]
+- Instead, email us directly at: ss9324558@gmail.com or bhadoria.suraj.singh.07@gmail.com
 - Include as much detail as possible (description, steps to reproduce, impact, etc.).
 - We will acknowledge your report within 3 business days, and will work with you to resolve the issue promptly.
 
