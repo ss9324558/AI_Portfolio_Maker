@@ -49,6 +49,7 @@
 
 - **Free** for simple portfolios & themes
 - **Premium marketplace** for advanced themes & AI-powered customization
+- 
 - **Default subdomain** for everyone (`portfolio.com/your-name`)
 - **Easy upgrade** for custom domains and advanced features
 
