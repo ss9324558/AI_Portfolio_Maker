@@ -98,6 +98,22 @@ cd ../backend && npm install # installs  backend deps
 ```
 
 Or use the root command if workspaces are configured.
+## 3. Database Setup (Backend)
+
+Before running the backend server, you need to create the PostgreSQL `users` table.
+
+### Manual Table Creation
+Manually execute the following SQL in your PostgreSQL client:
+
+```sql
+CREATE TABLE IF NOT EXISTS users (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255),
+  email VARCHAR(255) UNIQUE NOT NULL,
+  password VARCHAR(255) NOT NULL,
+  address TEXT,
+  date_of_birth DATE
+);
 
 ---
 
